@@ -9,9 +9,9 @@ async function bootstrap() {
       "http://localhost:5173",
       "https://pantar-f.vercel.app",
       "https://maxime-rose.vercel.app",
+      "https://pantar-5nqagidtg-maxinc0des-projects.vercel.app/",
     ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-    credentials: true,
   })
 
   await app.listen(process.env.PORT || 3000)
