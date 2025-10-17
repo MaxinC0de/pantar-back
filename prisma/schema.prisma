@@ -8,25 +8,25 @@ datasource db {
 }
 
 model Movie {
-  id String @id @default(uuid())
-  title String @unique
-  year String
-  genre String
-  director String
-  writer String
-  actors String
-  poster String?
+  id         String   @id @default(uuid())
+  title      String   @unique
+  year       String
+  genre      String
+  director   String
+  writer     String
+  actors     String
+  poster     String?
   posterWide String?
-  ratings Json
-  metascore String
-  isSeen Boolean @default(false)
-  tags String[]
-  createdAt DateTime @default(now()) @map("created_at")
+  ratings    Json
+  metascore  String
+  isSeen     Boolean  @default(false)
+  tags       String[]
+  createdAt  DateTime @default(now()) @map("created_at")
 }
 
 model Watchlist {
-  id String @id @default(uuid())
-  poster String
-  isSeen Boolean @default(false)
+  id       String   @id @default(uuid())
+  poster   String
+  isSeen   Boolean  @default(false)
   createAd DateTime @default(now()) @map("created_at")
 }
